@@ -7,9 +7,10 @@ const assertEqual = function(actual, expected) {
 };
 
 const findKeyByValue = function(objToScan, valueToFind) {
-  for (let key in objToScan) {
-    if (objToScan[key] === valueToFind) {
-      return key;
+  let keyArrays = Object.keys(objToScan);
+  for (let i = 0; i < keyArrays.length; i++) {
+    if (objToScan[keyArrays[i]] === valueToFind) {
+      return keyArrays[i];
     }
   }
 };
