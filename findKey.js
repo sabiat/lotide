@@ -1,10 +1,4 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`✅✅✅Assertion Passed: ${actual} === ${expected}`);
-  } else {
-    console.log(`🚫🚫🚫Assertion Failed: ${actual} !== ${expected}`);
-  }
-};
+const assertEqual = require('./assertEqual');
 
 /* function should scan object and return the first key for which the callback returns a truthy value
 PSEUDOCODE
@@ -38,7 +32,7 @@ const result2 = findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 5);
 
-
-assertEqual(result1, "noma");
-assertEqual(result2, undefined);
+module.exports = findKey;
+// assertEqual(result1, "noma");
+// assertEqual(result2, undefined);
 
