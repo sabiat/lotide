@@ -9,6 +9,11 @@ const countLetters = require('./countLetters');
 const without = require('./without');
 const takeUntil = require('./takeUntil')
 const findKeyByValue = require('./findKeyByValue');
+const assertEqual = require('./assertEqual');
+const assertArraysEqual = require('./assertArraysEqual');
+const assertObjectsEqual = require('./assertObjectsEqual');
+const eqArrays = require('./eqArrays');
+const eqObjects = require('./eqObjects');
 
 
 module.exports = {
@@ -22,6 +27,11 @@ module.exports = {
   countLetters,
   without,
   takeUntil,
-  findKeyByValue
+  findKeyByValue,
+  assertEqual,
+  assertArraysEqual,
+  assertObjectsEqual,
+  eqArrays,
+  eqObjects
 };
 
