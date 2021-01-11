@@ -8,10 +8,10 @@ describe("#tail", () => {
     assert.deepEqual(words.length, 3);
   });
 
-  it ("should return 'Lighthouse' for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
+  it ("should return ['Lighthouse', 'Labs'] for ['Yo Yo', 'Lighthouse', 'Labs']", () => {
     const words = ["Yo Yo", "Lighthouse", "Labs"];
     tail(words);
-    assert.deepEqual(tail(words)[0], "Lighthouse");
+    assert.deepEqual(tail(words), ["Lighthouse", "Labs"]);
   })
 
   it("should return empty array for [1]", () => {
